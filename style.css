@@ -179,3 +179,27 @@ main {
 .task .actions .delete {
     color: red;
 }
+
+#tasks li {
+    counter-increment: step-counter;
+    overflow: hidden;
+    padding: 0 0 20px 30px;
+    position: relative;
+}
+
+#tasks .btn-icon {
+    float: left;
+    margin: 0 10px 0 20px;
+}
+
+#tasks li:before {
+    content: counter(step-counter);
+    background: #212431;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 1;
+    right: 1;
+}
