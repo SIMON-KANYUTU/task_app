@@ -47,6 +47,11 @@ window.addEventListener('load', () => {
 
         task_el.appendChild(task_action_el);
 
+        const task_name = document.getElementById("new-task-input");
+        const valuee = task_name.value.trim();
+        const ol = list_el.querySelector('ol');
+        const li = document.createElement('li');
+
         input.value = '';
 
         list_el.appendChild(task_el);
